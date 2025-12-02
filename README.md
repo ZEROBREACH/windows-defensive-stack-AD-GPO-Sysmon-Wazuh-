@@ -92,6 +92,8 @@ Helpdesk.User → Helpdesk
 
 Workstation.User → Workstation Users
 
+<img width="770" height="540" alt="image" src="https://github.com/user-attachments/assets/68390670-aef0-45fa-a80a-54f1e275d9c5" />
+
 
 ## GPO Hardening
 Password & Account Policies
@@ -193,6 +195,6 @@ Secure admin password management (LAPS)
 
 Firewall enforcement and network segmentation
 
-SOC-ready, reproducible lab for portfolio or skill demonstration
+SOC-ready, reproducible lab 
 
 
