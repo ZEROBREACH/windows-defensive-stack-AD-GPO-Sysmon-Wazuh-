@@ -77,3 +77,102 @@ whoami
 ```
 <img width="987" height="592" alt="image" src="https://github.com/user-attachments/assets/94b2cdfb-cebc-451a-b3a0-686d00ac3b0c" />
 <img width="306" height="57" alt="image" src="https://github.com/user-attachments/assets/fc5f8d9f-46f0-433f-b87c-9c940e4370c6" />
+
+##OU and User Management
+
+ Created lab.ou under lab.local.
+
+Created child OUs: Servers, Computers, Users, Admins, Service-Accounts.
+
+Added test users and groups:
+
+Admin.Basit → Domain Admins
+
+Helpdesk.User → Helpdesk
+
+Workstation.User → Workstation Users
+
+
+##GPO Hardening
+Password & Account Policies
+
+Minimum length: 12+
+
+Complexity: Enabled
+
+Password history: 24
+
+Max age: 60 days
+
+<img width="1017" height="760" alt="image" src="https://github.com/user-attachments/assets/04b5d750-d3c8-47e6-a71f-0f956f15637b" />
+
+
+##Account Lockout
+
+Threshold: 4
+
+Duration: 15 mins
+
+Reset counter: 15 mins
+
+<img width="1017" height="723" alt="image" src="https://github.com/user-attachments/assets/386136bc-05a6-4efa-b915-3a19126f9a85" />
+
+
+##Advanced Audit Policy
+
+Enable auditing for:
+
+Logon/Logoff → Success/Failure
+
+Account Logon → Success/Failure
+
+Object Access → Success/Failure
+
+Directory Service Changes → Success/Failure
+
+Privilege Use → Success/Failure
+
+<img width="1010" height="672" alt="image" src="https://github.com/user-attachments/assets/7414a552-9ecb-4dac-8509-4da1649747a6" />
+
+
+##Firewall Rules
+
+Inbound allowed: DNS, LDAP, LDAPS, Kerberos, SMB (domain-only)
+<img width="1028" height="621" alt="image" src="https://github.com/user-attachments/assets/84caf743-e8ec-4609-b81c-1f2b5222e4c5" />
+
+Outbound allowed: HTTP/HTTPS
+
+##Wazuh Integration
+
+Installed Wazuh Manager (Ubuntu VM).
+
+Installed Wazuh Agent on DC 
+<img width="387" height="350" alt="image" src="https://github.com/user-attachments/assets/502862d3-9bc2-427e-855c-cecee08b3a8f" />
+<img width="390" height="103" alt="image" src="https://github.com/user-attachments/assets/ba473002-cb07-474f-973c-572052df5938" />
+
+Configured Sysmon log ingestion.
+<img width="406" height="96" alt="image" src="https://github.com/user-attachments/assets/72dfef2b-2d3c-46c6-ac9f-58413a99a58c" />
+
+Verified events appear in Wazuh dashboard.
+
+<img width="787" height="167" alt="image" src="https://github.com/user-attachments/assets/1b45e752-d972-4911-a59e-1843278c2c09" />
+<img width="1892" height="706" alt="image" src="https://github.com/user-attachments/assets/97e64a60-6999-44e0-aa6a-225b0dc2b10a" />
+
+##LAPS Deployment
+
+Extended AD schema for LAPS.
+
+Created and linked LAPS GPO to lab.ou.
+
+Configured:
+
+Password length: 14+
+
+Expiration: 30 days
+<img width="298" height="642" alt="image" src="https://github.com/user-attachments/assets/ccc0beb9-e693-4f7b-a771-8b2e9a913125" />
+
+<img width="1017" height="732" alt="image" src="https://github.com/user-attachments/assets/82372366-6a8d-4aa5-8ef0-5b58a29cfea1" />
+
+
+
+
