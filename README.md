@@ -78,7 +78,7 @@ whoami
 <img width="987" height="592" alt="image" src="https://github.com/user-attachments/assets/94b2cdfb-cebc-451a-b3a0-686d00ac3b0c" />
 <img width="306" height="57" alt="image" src="https://github.com/user-attachments/assets/fc5f8d9f-46f0-433f-b87c-9c940e4370c6" />
 
-##OU and User Management
+## OU and User Management
 
  Created lab.ou under lab.local.
 
@@ -93,7 +93,7 @@ Helpdesk.User → Helpdesk
 Workstation.User → Workstation Users
 
 
-##GPO Hardening
+## GPO Hardening
 Password & Account Policies
 
 Minimum length: 12+
@@ -107,7 +107,7 @@ Max age: 60 days
 <img width="1017" height="760" alt="image" src="https://github.com/user-attachments/assets/04b5d750-d3c8-47e6-a71f-0f956f15637b" />
 
 
-##Account Lockout
+## Account Lockout
 
 Threshold: 4
 
@@ -118,7 +118,7 @@ Reset counter: 15 mins
 <img width="1017" height="723" alt="image" src="https://github.com/user-attachments/assets/386136bc-05a6-4efa-b915-3a19126f9a85" />
 
 
-##Advanced Audit Policy
+## Advanced Audit Policy
 
 Enable auditing for:
 
@@ -135,14 +135,15 @@ Privilege Use → Success/Failure
 <img width="1010" height="672" alt="image" src="https://github.com/user-attachments/assets/7414a552-9ecb-4dac-8509-4da1649747a6" />
 
 
-##Firewall Rules
+## Firewall Rules
 
 Inbound allowed: DNS, LDAP, LDAPS, Kerberos, SMB (domain-only)
 <img width="1028" height="621" alt="image" src="https://github.com/user-attachments/assets/84caf743-e8ec-4609-b81c-1f2b5222e4c5" />
 
 Outbound allowed: HTTP/HTTPS
+<img width="851" height="510" alt="image" src="https://github.com/user-attachments/assets/4cd91a36-a618-4694-b61c-d1dc62c70e04" />
 
-##Wazuh Integration
+## Wazuh Integration
 
 Installed Wazuh Manager (Ubuntu VM).
 
@@ -158,7 +159,7 @@ Verified events appear in Wazuh dashboard.
 <img width="787" height="167" alt="image" src="https://github.com/user-attachments/assets/1b45e752-d972-4911-a59e-1843278c2c09" />
 <img width="1892" height="706" alt="image" src="https://github.com/user-attachments/assets/97e64a60-6999-44e0-aa6a-225b0dc2b10a" />
 
-##LAPS Deployment
+## LAPS Deployment
 
 Extended AD schema for LAPS.
 
@@ -173,6 +174,25 @@ Expiration: 30 days
 
 <img width="1017" height="732" alt="image" src="https://github.com/user-attachments/assets/82372366-6a8d-4aa5-8ef0-5b58a29cfea1" />
 
+## VLAN Segmentation
 
+Created virtual VLANs for DC, clients, and Wazuh Manager.
+
+Segmented traffic and tested connectivity.
+<img width="882" height="472" alt="image" src="https://github.com/user-attachments/assets/f075001f-959a-4e93-8a9b-f414c98d81b2" />
+
+## Conclusion
+
+This lab demonstrates a professional enterprise defensive setup:
+
+Active Directory hardening
+
+Endpoint logging and monitoring (Sysmon + Wazuh)
+
+Secure admin password management (LAPS)
+
+Firewall enforcement and network segmentation
+
+SOC-ready, reproducible lab for portfolio or skill demonstration
 
 
