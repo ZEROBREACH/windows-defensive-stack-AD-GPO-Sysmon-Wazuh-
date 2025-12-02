@@ -53,7 +53,8 @@ This lab demonstrates a professional **defensive security stack**:
 | **Wazuh Manager**| Centralized SIEM and alerting             |
 | **Network**      | VLAN-segmented virtual network             |
 
-**Screenshot placeholder:** `/docs/screenshots/network_topology.png`
+<img width="1843" height="856" alt="image" src="https://github.com/user-attachments/assets/54693d83-58d2-430c-9ef1-10cb766705fe" />
+
 
 ---
 
@@ -65,10 +66,14 @@ This lab demonstrates a professional **defensive security stack**:
 3. Promoted to new forest: `lab.local`.
 4. Rebooted and verified domain status.
 
-**Screenshot placeholder:** `/docs/screenshots/dc-promotion.png`
+<img width="1023" height="723" alt="Screenshot 2025-12-01 132746" src="https://github.com/user-attachments/assets/821aeb5d-0c94-451b-9885-3c11e115e6bd" />
+
 
 **Verification Commands:**
 ```powershell
 Get-ADDomain
 nslookup lab.local
 whoami
+```
+<img width="987" height="592" alt="image" src="https://github.com/user-attachments/assets/94b2cdfb-cebc-451a-b3a0-686d00ac3b0c" />
+<img width="306" height="57" alt="image" src="https://github.com/user-attachments/assets/fc5f8d9f-46f0-433f-b87c-9c940e4370c6" />
